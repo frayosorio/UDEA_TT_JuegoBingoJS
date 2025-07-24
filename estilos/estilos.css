@@ -11,26 +11,58 @@
   box-shadow: 0 9px #999;
 }
 
-.boton:hover{
-    background-color: #3e8e41
+.boton:hover {
+  background-color: #3e8e41
 }
 
 .boton:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 
-.cantor{
-  flex: 0 0 300px; /* No crece, no se encoge, tiene un ancho base de 300px */
-  min-width: 280px; /* Ancho mínimo para que no se comprima demasiado */
-  max-width: 350px; /* Ancho máximo, para pantallas grandes */
-  box-sizing: border-box; /* Incluye padding y borde en el ancho */
-  padding-right: 10px; /* Pequeño padding para separar del borde del contenedor */
+.cantor {
+  flex: 0 0 300px;
+  /* No crece, no se encoge, tiene un ancho base de 300px */
+  min-width: 280px;
+  /* Ancho mínimo para que no se comprima demasiado */
+  max-width: 350px;
+  /* Ancho máximo, para pantallas grandes */
+  box-sizing: border-box;
+  /* Incluye padding y borde en el ancho */
+  padding-right: 10px;
+  /* Pequeño padding para separar del borde del contenedor */
 }
 
-.tablaCantor{
-    width: 100%; /* Ocupa todo el ancho disponible en .cantor-section */
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    background-color: #fff;
+.tablaCantor {
+  width: 100%;
+  /* Ocupa todo el ancho disponible en .cantor-section */
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.tablaCantor th,
+.tablaCantor td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  width: calc(100% / 5);
+  /* Para que las columnas tengan el mismo ancho */
+}
+
+.tablaCantor th {
+  background-color: #0056b3;
+  color: white;
+}
+
+.tablaCantor td.sacada {
+  background-color: #28a745;
+  color: white;
+}
+
+.tablaCantor td:not(.sacada) {
+  background-color: #ccc;
+  color: black;
 }
