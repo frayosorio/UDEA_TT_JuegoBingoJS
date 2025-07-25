@@ -60,8 +60,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="fila in jugador.tablaJugador.tabla">
-                            <td ng-repeat="numero in fila" ng-class="{ sacada: false }">
+                        <tr ng-repeat="fila in jugador.tablaJugador.tabla track by $index">
+                            <td ng-repeat="numero in fila track by $index" ng-class="{ sacada: jugador.tablaJugador.tapada[$parent.$index][$index] }">
                                 {{ numero }}
                             </td>
                         </tr>

@@ -18,6 +18,10 @@ angular.module("JuegoBingo", [])
 
             $scope.sacarBalota = function () {
                 $scope.cantor.sacarBalota();
+
+                for (i = 0; i < $scope.jugadores.length; i++) {
+                    $scope.jugadores[i].tablaJugador.taparNumero($scope.cantor.ultimaBalota);
+                }
             }
         }
     );

@@ -134,3 +134,13 @@ body {
     align-items: flex-start; /* Alinea los ítems al inicio de la cruz */
     flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */ 
 }
+
+.jugador td.sacada {
+  background-color: #2822d6;
+  color: white;
+}
+
+.jugador td:not(.sacada) {
+  background-color: #ccc;
+  color: black;
+}
