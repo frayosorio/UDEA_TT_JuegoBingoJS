@@ -7,6 +7,7 @@ angular.module("JuegoBingo", [])
 
             $scope.iniciarJuego = function () {
                 const totalJugadores = 7;
+                $scope.jugadores = [];
                 for (let i = 0; i < totalJugadores; i++) {
                     $scope.jugadores.push({
                         nombre: "Jugador " + (i + 1),
