@@ -45,6 +45,28 @@
             </tbody>
         </table>
     </div>
+    <div class="tablas">
+        <div class="Jugador" ng-repeat="tabla in tablas">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>B</th>
+                        <th>I</th>
+                        <th>N</th>
+                        <th>G</th>
+                        <th>O</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="fila in tabla">
+                        <td ng-repeat="numero in fila" ng-class="{ sacada: false }">
+                            {{ numero }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
