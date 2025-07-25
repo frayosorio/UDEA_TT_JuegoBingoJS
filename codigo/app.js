@@ -3,14 +3,14 @@ angular.module("JuegoBingo", [])
         function ($scope) {
 
             $scope.cantor = new Cantor();
-            $scope.tablas = [];
+            $scope.jugadores = [];
 
             $scope.iniciarJuego = function () {
                 const totalJugadores = 7;
                 for (let i = 0; i < totalJugadores; i++) {
-                    $scope.tablas.push({
+                    $scope.jugadores.push({
                         nombre: "Jugador " + (i + 1),
-                        tabla: new Tabla(),
+                        tablaJugador: new Tabla(),
                         ganador: false
                     });
                 }
