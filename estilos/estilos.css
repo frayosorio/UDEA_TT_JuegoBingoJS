@@ -117,6 +117,13 @@ body {
     margin-top: 10px;
 }
 
+.jugador th, .jugador td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 .jugador th {
   background-color: #d34d0a;
   color: white;
