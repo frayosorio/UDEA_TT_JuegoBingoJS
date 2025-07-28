@@ -1,13 +1,13 @@
 function Tabla() {
 
     this.tabla = [];
-    this.tapada = [];
+    this.tapadas = [];
     for (var f = 0; f < 5; f++) {
         this.tabla[f] = [];
-        this.tapada[f] = [];
+        this.tapadas[f] = [];
         for (var c = 0; c < 5; c++) {
             this.tabla[f][c] = 0;
-            this.tapada[f][c] = false;
+            this.tapadas[f][c] = false;
         }
     }
 
@@ -33,7 +33,7 @@ function Tabla() {
             }
             else {
                 this.tabla[f][c] = "LIBRE";
-                this.tapada[f][c] = true;
+                this.tapadas[f][c] = true;
             }
         }
     }
@@ -42,7 +42,7 @@ function Tabla() {
         for (var f = 0; f < 5; f++) {
             for (var c = 0; c < 5; c++) {
                 if (this.tabla[f][c] == balotaSacada) {
-                    this.tapada[f][c] = true;
+                    this.tapadas[f][c] = true;
                 }
             }
         }
